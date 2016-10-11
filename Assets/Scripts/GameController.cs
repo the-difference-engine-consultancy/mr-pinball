@@ -8,12 +8,6 @@ public class GameController : MonoBehaviour {
 	public GameObject gameControllerObject;
 	GameController gameController;
 
-	public bool isActive = false;
-
-	void Start(){
-		gameController = gameControllerObject.GetComponent<GameController> ();
-	}
-
 	int gameScore = 0;
 	public int gameLives = 3;
 
@@ -21,6 +15,9 @@ public class GameController : MonoBehaviour {
 	public GameObject ball;
 	public GameObject ballSpawn;
 	public int force;
+
+	private AudioSource flipper;
+	public AudioClip flipperSound;
 
 	public HingeJoint2D leftFlipper;
 	public HingeJoint2D rightFlipper;
@@ -30,6 +27,13 @@ public class GameController : MonoBehaviour {
 
 	public Text scoreText;
 	public Text livesText;
+
+	public bool isActive = false;
+
+	void Start(){
+		gameController = gameControllerObject.GetComponent<GameController> ();
+		flipper = GetComponent<AudioSource> ();
+	}
 
 	public void AddScore(int plusScore){
 		gameScore += plusScore;
@@ -47,6 +51,7 @@ public class GameController : MonoBehaviour {
 		leftJointMotor.motorSpeed = -500;
 
 		leftFlipper.motor = leftJointMotor;
+		flipper.PlayOneShot (flipperSound, 0.5f);
 	}
 
 	public void leftButtonUp(){
@@ -63,6 +68,8 @@ public class GameController : MonoBehaviour {
 		rightJointMotor.motorSpeed = 500;
 
 		rightFlipper.motor = rightJointMotor;
+
+		flipper.PlayOneShot (flipperSound, 0.5f);
 	}
 
 	public void rightButtonUp(){
