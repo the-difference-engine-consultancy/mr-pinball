@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{81BD0DF7-8777-F791-A7EA-AF54DFEF9B3A}") = "PepsiARPinball", "Assembly-CSharp.csproj", "{2DD14DFC-69C5-40E3-3024-F761EF6AA8F6}"
+EndProject
+Project("{81BD0DF7-8777-F791-A7EA-AF54DFEF9B3A}") = "PepsiARPinball", "Assembly-CSharp-Editor.csproj", "{CEA7F3F6-6E52-C894-3363-45F952572AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD14DFC-69C5-40E3-3024-F761EF6AA8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD14DFC-69C5-40E3-3024-F761EF6AA8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD14DFC-69C5-40E3-3024-F761EF6AA8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD14DFC-69C5-40E3-3024-F761EF6AA8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA7F3F6-6E52-C894-3363-45F952572AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA7F3F6-6E52-C894-3363-45F952572AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA7F3F6-6E52-C894-3363-45F952572AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA7F3F6-6E52-C894-3363-45F952572AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
