@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
-	public GameObject gameControllerObject;
-	GameController gameController;
+	//public GameObject gameControllerObject;
+	public static GameController gameController;
 
 	int gameScore = 0;
 	public int gameLives = 3;
@@ -30,14 +30,28 @@ public class GameController : MonoBehaviour {
 
 	public bool isActive = false;
 
+	void Awake(){
+		if (gameController == null) {
+			DontDestroyOnLoad (gameObject);
+			gameController = this;
+		}
+		else if(gameController != null){
+			Destroy (gameObject);
+		}
+	}
+
 	void Start(){
-		gameController = gameControllerObject.GetComponent<GameController> ();
+//		gameController = gameControllerObject.GetComponent<GameController> ();
 		flipper = GetComponent<AudioSource> ();
 	}
 
 	public void AddScore(int plusScore){
 		gameScore += plusScore;
 		scoreText.text = "Score: " + gameScore;
+	}
+
+	public int GetScore(){
+		return gameScore;
 	}
 
 	public void SubLives(){
