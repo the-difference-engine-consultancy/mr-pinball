@@ -45,6 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\Scripts\Boundary.cs" />
+     <Compile Include="Assets\Editor\Scripts\BumperController.cs" />
+     <Compile Include="Assets\Editor\Scripts\ButtonUIScript.cs" />
+     <Compile Include="Assets\Editor\Scripts\ExitScript.cs" />
+     <Compile Include="Assets\Editor\Scripts\GameController.cs" />
+     <Compile Include="Assets\Editor\Scripts\GetScore.cs" />
+     <Compile Include="Assets\Editor\Scripts\PlayerName.cs" />
+     <Compile Include="Assets\Editor\Scripts\SceneTransition.cs" />
+     <Compile Include="Assets\Editor\Scripts\WWWLeaderboard.cs" />
      <Compile Include="Assets\JSON\Editor\JSONChecker.cs" />
      <Compile Include="Assets\Vuforia\Editor\Scripts\ComponentFactoryStarter\ComponentFactoryStarter.cs" />
      <Compile Include="Assets\Vuforia\Editor\Scripts\ExtensionImport.cs" />
