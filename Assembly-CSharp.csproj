@@ -45,12 +45,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\JSON\JSONObject.cs" />
+     <Compile Include="Assets\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\Boundary.cs" />
      <Compile Include="Assets\Scripts\BumperController.cs" />
      <Compile Include="Assets\Scripts\ButtonUIScript.cs" />
      <Compile Include="Assets\Scripts\ExitScript.cs" />
-     <Compile Include="Assets\Scripts\FlipperTest.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\GetScore.cs" />
+     <Compile Include="Assets\Scripts\PlayerName.cs" />
      <Compile Include="Assets\Scripts\SceneTransition.cs" />
      <Compile Include="Assets\Scripts\WWWLeaderboard.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
@@ -96,6 +100,7 @@
      <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\StreamingAssets\QCAR\NewPepsi.xml" />
+     <None Include="Assets\JSON\readme.txt" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />

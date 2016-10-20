@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class WWWLeaderboard : MonoBehaviour {
 
+	public InputField username;
+
 	GameController gameController;
+
 	// Use this for initialization
 	void Start () {
 		gameController = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameController>();
@@ -18,7 +22,7 @@ public class WWWLeaderboard : MonoBehaviour {
 
 		WWWForm form = new WWWForm();
 		form.AddField( "score", score );
-		form.AddField( "name", "DanChu" );
+		form.AddField( "name", username.text );
 
 		WWW postRequest = new WWW( "http://unity-api.herokuapp.com/scores", form );
 

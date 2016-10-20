@@ -10,4 +10,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
   - enabled: 1
+    path: Assets/Scenes/UploadScore.unity
+  - enabled: 1
     path: Assets/Scenes/Restart.unity
