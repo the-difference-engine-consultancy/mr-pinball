@@ -27,6 +27,7 @@ public class WWWLeaderboard : MonoBehaviour {
 		WWW postRequest = new WWW( "http://unity-api.herokuapp.com/scores", form );
 
 		yield return postRequest;
+
 		if (!string.IsNullOrEmpty(postRequest.error)) {
 			print(postRequest.error);
 		}
